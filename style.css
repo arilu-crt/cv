@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+nav{
+display: flex;
+position: fixed;
+top: 0;
+z-index: 999;
+width: 100%;
+background-color: transparent;
+
+
+}
+
+.burger{
+    position: absolute;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+}
+
+.burger .line{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.nav--bg{
+    animation: fadeIn 0.4s;
+    -webkit-animation: fadeIn 0.4s;
+    -moz-animation: fadeIn 0.4s;
+    -o-animation: fadeIn 0.4s;
+    -ms-animation: fadeIn 0.4s;
+    background-color: white;
+    color: black;
+}
+
+.nav--bg #nav-list a{
+    color: black;
+}
+
+.nav--bg #brand{
+    color: black;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+#brand{
+   width: 20%;
+   text-align: center;
+   align-items: center;
+   font-size: 1.5em;
+   padding: 10px;
+   color: white;
+
+   
+}
+
+
+
+nav #nav-list{
+    width: 80%;
+    display: flex;
+    text-align: center;
+    list-style: none;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    align-items: center;
+    
+
+}
+
+#nav-list a:hover{
+    background: -webkit-linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#nav-list a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+#head{
+    
+    background: url('threeladies.jpg');
+    height: 230px;
+    background-size: 100%;
+}
+
+main{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+/* om */
+
+#om img{ 
+    float: right;
+    height: 200px;
+    border-radius: 10% 30%;
+    padding: 10px;
+}
+
+#om p{
+    padding: 5px;
+    font-size: 18px;
+}
+
+hr{
+    border: solid 2px rgb(28, 28, 29);
+        border-radius: 40%;
+        margin: 2% 30%;
+}
+
+h3{
+
+    padding-top: 70px;
+/*     padding-bottom: 10px;
+ */    text-align: center;
+    font-size: 40px;
+    background: -webkit-linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* projects */
+
+
+
+.projects{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.projects div{
+    padding: 10px;
+    width: 40%;
+    
+    
+}
+
+.projects h6{
+    font-size: 20px;
+}
+
+.projects a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.projects h6:hover{
+    background: -webkit-linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.proj-text {
+   width: 70%;
+   margin: 0 auto;
+   padding: 10px;
+   font-size: 17px;
+}
+
+/* erfaring */
+
+.work-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.work-item{
+    padding: 5px;
+    width: 33%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.work-item h5{
+    font-size: 20px;
+    background: -webkit-linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* skills */
+
+#skills h4{
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    background: -webkit-linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline 3px dotted black;
+}
+
+#skills p{
+    font-size: 17px;
+}
+
+#sprak{
+    text-align: center;
+    list-style-position: inside;
+    font-size: 17px;
+}
+
+.container{
+    width: 100%;
+    background-color: black;
+    
+}
+
+.skills{
+    
+    height: 10px;
+}
+
+#coding{
+    padding-top: 20px;
+}
+
+#adobe h4{
+    text-align: right;
+}
+.html{
+    width: 90%;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+}
+
+.css{
+    width: 75%;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+}
+
+.js{
+    width: 50%;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+}
+
+.nodejs{
+    width: 30%;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+}
+
+.react{
+    width: 10%;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+}
+
+#adobe{
+    padding-top: 20px;
+}
+
+.premiere{
+    width: 90%;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+}
+
+.illustrator{
+    width: 75%;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+
+}
+
+.photoshop{
+    width: 60%;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+
+}
+
+.xd{
+    width: 10%;
+    background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+
+}
+
+
+/* utdanning */
+
+#utdanning{
+    padding-bottom: 20px;
+}
+
+.education{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.education h5{
+    font-size: 20px;
+    background: -webkit-linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.education h4{
+    padding: 5px;
+    text-decoration: underline dotted 3px black;
+    font-size: 23px;
+    background: -webkit-linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.uni-item{
+    padding-top: 10px;
+}
+
+.uni-item p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sert-item{
+    padding-top: 10px;
+}
+
+#universitet, #sertifisering{
+    padding: 10px;
+}
+
+/* kontakt */
+
+footer{
+    background-color: black;
+    margin-top: 20px;
+    
+}
+
+#kontakt h3{
+  
+    padding-top: 10px;
+}
+
+#kontakt p{
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.contact-info div{
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-info p{
+    font-size: 17px;
+    padding: 10px;
+}
+
+.contact-info a{
+    font-size: 24px ;
+}
+
+.contact-info a i{
+    font-size: 22px;
+    margin: 5px;
+}
+
+.contact-info a span{
+    font-size: 20px;
+}
+
+.contact-info a:hover{
+    background: -webkit-linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#topp{
+    padding: 10px;
+    text-align: right;
+}
+
+@media (max-width: 600px){
+nav{
+    flex-direction: column;
+}
+
+    .burger{
+        display: flex;
+    }
+
+    nav #nav-list{
+        
+        display: none;
+        width: 100%;
+        padding:0px;
+        
+    }
+    
+    nav #nav-list.active{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        
+        
+    }
+    
+    nav #nav-list.active ul{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        
+/*         background: linear-gradient(45deg,rgb(45, 110, 185), rgb(33, 206, 148));
+ */        
+    }
+    nav #nav-list.active a{
+        color: black;
+    }
+
+    nav #nav-list.active a:target
+
+    
+    #brand{
+        width: 40%;
+        padding-top:10px;
+    }
+    #head{
+        height: 110px;
+        
+    }
+
+    #om img{
+        height: 120px;
+        padding: 2px;
+    }
+    #om div{
+        padding: 10px;
+    }
+
+    .projects{
+        flex-direction: column;
+    }
+    .projects div{
+        width: 100%;
+    }
+    .proj-text {
+        width: 100%;
+     }
+
+     .work-content{
+         flex-direction: column;
+     }
+     .work-item{
+         width: 100%;
+     }
+
+     .education{
+         flex-direction: column;
+     }
+
+     .contact-info{
+         flex-direction: column;
+     }
+}
