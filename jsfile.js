@@ -1,3 +1,5 @@
+const theApiKey = config.MY_API_KEY
+
 document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver(entries => {
         document.querySelector("nav").classList.toggle("nav--bg", entries[0].intersectionRatio < 0.25);
@@ -100,7 +102,7 @@ btnNoDare.addEventListener('click', () => {
 
 
 let weather = {
-    apiKey: "d35274e4ac0853f0e03c08690dc51d5f",
+    apiKey: theApiKey,
     fetchWeather: function (city) {
         fetch(
             "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + this.apiKey
