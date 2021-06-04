@@ -17,7 +17,9 @@
 
     <nav>
         <div id="brand">
-            <p>Ariane Coriat</p>
+            <a href="#head">
+                <p>Ariane Coriat</p>
+            </a>
         </div>
 
         <div class="burger">
@@ -38,16 +40,42 @@
     </nav>
 
     <header id="head">
-        <div id="accroche">
-            <p> </p>
+        <div>
+            <button id="btnChangeColor">Vil du bytte headings' farge? <br> og posisjon?</button>
         </div>
     </header>
 
 
+    <section id="codingInDaSun">
+        <div class="card">
+            <!--  <div class="info-sun"> -->
+            <div class="intro-sun">
+                <p>Det er ikke fordi vi koder at vi må være altid inn</p>
+                <p>Skjekk hvor er vær i din by og gå ut og kode i solen!</p>
+            </div>
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Søk">
+                <button>Søk</button>
+            </div>
+            <!-- </div> -->
+
+            <div class="weather loading">
+                <div class="city"></div>
+                <div class="temp"> </div>
+
+                <!-- <div class="weather-depic"> -->
+                <img src="" alt="" class="icon" />
+                <div class="description"></div>
+                <!-- </div> -->
+                <div class="wind"></div>
+            </div>
+
+        </div>
+    </section>
     <main>
 
         <article id="om">
-            <h3>Hvem er jeg?</h3>
+            <h3 class="changeColor">Hvem er jeg?</h3>
             <hr>
             <div>
                 <img src="ariane.jpeg" alt="ari">
@@ -67,7 +95,7 @@
 
 
         <section id="prosjekter">
-            <h3>Prosjekter</h3>
+            <h3 class="changeColor">Prosjekter</h3>
             <hr>
             <div class="projects">
                 <div>
@@ -76,9 +104,12 @@
                         <h6>Oslo Street PingPong</h6>
 
                     </a>
-                    <p class="proj-text">Nettsider for Oslo Street Ping Pong forening som jobber for å utvikle utendørs
-                        bordtennis kultur
-                        i Oslo </p>
+                    <p class="proj-text accordeon">Nettsider for Oslo Street Ping Pong forening som jobber for å utvikle
+                        utendørs bordtennis kultur i Oslo. <br> Vil fremme dette sosiale møtepunktet i
+                        tilværelsen - Et trygt og inkluderende sted hvor det er gøy å være, og hvor bånd knyttes. Dette
+                        unike fenomenet oppstod i Oslo på grunn av bordtennis, og vi ønsker å utvikle det videre.</p>
+                    <button class="accordeon-button">+-</button>
+
                 </div>
 
                 <div>
@@ -86,9 +117,11 @@
                         <img src="LOGO 2_5.png" alt="logo" height="100">
                         <h6>COCOA COol&COzy Apartments</h6>
                     </a>
-                    <p class="proj-text">Nettsider for COCOA en ny bedrift som spesialiserer seg på kommersialisering og
+                    <p class="proj-text accordeon">Nettsider for COCOA en ny bedrift som spesialiserer seg på
+                        kommersialisering og
                         forvaltning av
                         leiligheter med hotelltjenester i de viktigste latinamerikanske feriedestinasjonene</p>
+                    <button class="accordeon-button">+-</button>
                     <p class="proj-text">under konstruksjon</p>
                 </div>
             </div>
@@ -96,7 +129,7 @@
         </section>
 
         <section id="erfaring">
-            <h3>Erfaring</h3>
+            <h3 class="changeColor">Erfaring</h3>
 
             <hr>
             <div class="work-content">
@@ -164,16 +197,11 @@
         </section>
 
         <section id="skills">
-            <h3>Skills</h3>
+            <h3 class="changeColor">Skills</h3>
             <hr>
             <section id="sprak">
                 <h4>Språk</h4>
-                <ul>
-                    <li>Fransk: morsmål</li>
-                    <li>Spansk: morsmål</li>
-                    <li>Engelsk: flytende</li>
-                    <li>Norsk: nivå B2</li>
-                </ul>
+                <!-- array of obj in there -->
             </section>
             <section id="coding">
                 <h4>Utvikling</h4>
@@ -205,7 +233,7 @@
                 </div>
             </section>
 
-            <!--             <section class="skills-anim">
+            <!--  <section class="skills-anim show-on-scroll">
                 <div class="skills-bar">
                     <div class="skills-name">
                         <span>HTML</span>
@@ -273,7 +301,7 @@
         </section>
 
         <section id="utdanning">
-            <h3>Utdanning</h3>
+            <h3 class="changeColor">Utdanning</h3>
             <hr>
             <div class="education">
                 <div id="universitet">
@@ -309,7 +337,34 @@
                 </div>
             </div>
 
+
         </section>
+
+        <section id="dare">
+            <div>
+                <h2>La oss ha det gøy, tør du?</h2>
+                <hr>
+                <div>
+                    <button id="yesDare">Yes Sir!</button>
+                    <button id="noDare">Nei, takk!</button>
+                </div>
+
+
+                <div id="pDareYes">
+                    <p>AHAA! Du er klar for å ha det gøy og vil utvikle deg selv. Her kan du finne
+                        forskellige coding challenges for
+                        å gjøre. Kom igjen, du skal være greit! Lykke til</p>
+                    <p><a
+                            href="https://www.freecodecamp.org/news/the-10-most-popular-coding-challenge-websites-of-2016-fb8a5672d22f/">10
+                            Mest Popular Coding Utfordringer Nettsider</a></p>
+                </div>
+                <div id="pDareNo">
+                    <p>Ohhh... Litten skuffet du sagt nei, men det går helt fint, kanskje neste gang! Ha det
+                        godt!</p>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
@@ -337,25 +392,8 @@
         </a>
 
     </footer>
-    <script>document.addEventListener("DOMContentLoaded", () => {
-            const observer = new IntersectionObserver(entries => {
-                document.querySelector("nav").classList.toggle("nav--bg", entries[0].intersectionRatio < 0.25);
-            }, {
-                threshold: 0.25
-            });
-            observer.observe(document.querySelector("#head"));
-        });</script>
-    <script>
-        const navSlide = () => {
-            const burger = document.querySelector('.burger');
-            const nav = document.querySelector('#nav-list')
-            burger.addEventListener('click', () => {
-                nav.classList.toggle('active');
-            })
+    <script src="jsfile.js"></script>
 
-        }
-        navSlide();
-    </script>
 </body>
 
 </html>
